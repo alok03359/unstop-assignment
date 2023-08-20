@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800;900&family=Open+Sans&display=swap');
+
+.main{
+    height: 215px;
+    width: 415px;
+    background-color: #F6F8FA;
+    border-radius: 12px;
+    border: 1px solid #DADCE0;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.plus-icon-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.plus-icon{
+    height: 75px;
+    width: 75px;
+    border-radius: 70px;
+    background-color: #ffffff;
+    
+}
+
+.plus-icon img{
+    height: 45px;
+    width: 45px;
+    margin: 15px;
+}
+
+.new-assessment{
+    color: #1C4980;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.desc{
+    color: #1C4980;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 600;
+    margin: 10px  35px 0 35px;
+}
+
+
+@media screen and (max-width:700px) {
+    .main{
+        width: 100%;
+        height: 160px;
+    }
+
+    .plus-icon-container{
+        margin-top: 20px;
+    }
+
+    .plus-icon{
+        height: 50px;
+        width: 50px;
+    }
+
+    .plus-icon img{
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+    }
+
+    .new-assessment{
+        margin-top: 7px;
+    }
+
+    .desc{
+        margin: 5px 10px;
+    }
+}

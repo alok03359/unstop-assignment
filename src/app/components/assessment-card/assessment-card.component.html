@@ -1,0 +1,81 @@
+<div [ngClass]="isLast?'main last':'main'">
+    <div class="mobile-card">
+        <div class="mobile-card-inner">
+            <div class="icon-container">
+                <img class="icon" src="assets/images/assessment_icon.svg" alt="">
+                <div class="menu">
+                    <img src="assets/images/menu.svg" alt="">
+                </div>
+            </div>
+            <div class="name-desc">
+                <div class="assessment-name">
+                    Math Assessment
+                </div>
+            
+                <div class="desc">
+                    <div class="desc-label">
+                        Job
+                    </div>
+            
+                    <div class="separator"></div>
+                    
+                    <div class="date">
+                        <div class="date-icon">
+                            <img src="assets/images/calendar.svg" alt="">
+                        </div>
+                        <div class="date-label">
+                            20 Apr 2023
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+        <div class="menu-copy">
+            <img src="assets/images/menu.svg" alt="">
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        <div class="footer-left">
+            <div class="duration">
+                <div class="duration-val">
+                    00
+                </div>
+                <div class="duration-label">
+                    Duration
+                </div>
+            </div>
+            <div class="questions">
+                <div class="ques-val">
+                    00
+                </div>
+                <div class="ques-label">
+                    Questions
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div [ngClass]="isLast?'move-right share-btn':'share-btn'">
+                <img src="assets/images/link.svg" alt="">
+                <span>Share</span>
+            </div>
+            <div [ngClass]="isLast?'move-right accounts':'accounts'">
+                <div class="circle c1">
+                    LP
+                </div>
+                <div class="circle c2" *ngIf="isLast">
+                    LP
+                </div>
+                <div class="circle c3" *ngIf="isLast">
+                    LP
+                </div>
+            </div>
+            <div class="count" *ngIf="isLast">
+                +324
+            </div>
+        </div>
+    </div>
+    
+</div>

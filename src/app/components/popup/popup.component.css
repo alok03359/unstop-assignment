@@ -1,0 +1,128 @@
+.main{
+    z-index: 100;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba( 0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 628px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    /* bottom: 0;
+    position: absolute; */
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DADCE0;
+    padding: 18px 32px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #1C4980;
+    font-family: 'Inter';
+}
+
+.close-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inputs{
+    padding: 18px 32px 0 32px;
+}
+
+.label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1C4980;
+    font-family: 'Inter';
+}
+
+input[type=text], select{
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin: 8px 0 20px 0;
+    border-radius: 10px;
+    border: 1px solid #DADCE0;
+    color: #1C4980;
+    font-weight: 500;
+    outline: none;
+}
+
+.skills-input-item input[type=text]{
+    border:none;
+    margin:0;
+}
+
+.skills-input-item{
+    border: 1px solid #DADCE0;
+    border-radius: 10px;
+    margin: 10px 0 20px 0;
+}
+
+.tags{
+    border-bottom: 1px solid #DADCE0;
+    padding: 15px;
+}
+
+.tag{
+    display: inline-block;
+}
+
+.tag-container{
+    display: flex;
+    align-items: center;
+    background-color: #DDEDFF;
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.tag-label{
+    font-size: 12px;
+    font-weight: 600;
+    color: #1C4980;
+    font-family: 'Inter';
+    padding-right: 5px;
+}
+
+.remove-btn img{
+    margin-top: 5px;
+}
+
+.save-btn-container{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    box-shadow: 6px -19px 20px -24px rgba(0,0,0,0.4);
+}
+
+.btn{
+    width: 100%;
+    background-color: #0073E6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Inter';
+}

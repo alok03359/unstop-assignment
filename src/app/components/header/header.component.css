@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800;900&family=Open+Sans&display=swap');
+
+.main{
+    height: 80px;
+    border-bottom: 1px solid #DDE5EA;
+    padding: 0 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-section{
+    display: flex;
+}
+
+.segment-icon{
+    display: none;
+}
+
+.assessment{
+    color: #1C4980;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20px;
+    padding: 0 22px 0 3px;
+    margin: 15px 0 12px 0;
+    display: flex;
+    align-items: center;
+    transform: scale(1.1, 1);
+    border-right: 1px solid #DADCE0;
+}
+
+.segment{
+    display: flex;
+    padding: 10px 20px 0px 30px;
+}
+
+.active{
+    color: #0073E6;
+    border-bottom: 4px solid #0073E6;
+}
+
+.tab{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Inter';
+}
+
+.unstop{
+    display: none;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.icon img{
+    height: 26px;
+}
+
+.laptop-icon{
+    display: none;
+}
+
+
+@media screen and (max-width:700px) {
+
+    .main{
+        height: 120px;
+        width: 100%;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .segment-icon{
+        display: inline-block;
+    }
+
+    .sub-section{
+        display: block;
+        width: 100%;
+    }
+
+    .assessment img{
+        background-color: #F2F8FE;
+        border-radius: 50%;
+        padding: 10px 7px;
+        margin-right: 10px;
+    }
+
+    .assessment{
+        border-right: none;
+        padding-right: 0;
+        display: flex;
+        padding: 0 26px;
+    }
+
+    .unstop{
+        display: flex;
+    }
+
+    .active{
+        color: #0073E6;
+        border-bottom: 3px solid #0073E6;
+    }
+
+    .inactive{
+        border-bottom: 3px solid #DADCE0;
+    }
+
+    .mobile-icon{
+        display: none;
+    }
+
+    .assessment .laptop-icon{
+        display: inline-block;
+        background-color: white;
+        border-radius: 0;
+        padding: 0;
+        position: absolute;
+        right: 30px;
+        top: 15px;
+    }
+
+    .segment{
+        padding: 0;
+        display: flex;
+    }
+
+    .tab{
+        width: 50%;
+        height: 50px;
+        justify-content: center;
+    }
+}

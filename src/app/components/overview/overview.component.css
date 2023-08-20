@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800;900&family=Open+Sans&display=swap');
+
+.main{
+    margin-bottom: 40px;
+}
+
+.header{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1C4980;
+    font-family: 'Inter';
+}
+
+.container{
+    display: flex;
+    margin-top: 18px;
+    border: 1px solid #DADCE0;
+    border-radius: 12px;
+}
+
+.section{
+    padding: 19px 21px;
+}
+
+.title{
+    font-size: 15px;
+    font-weight: 800;
+    color: #1C4980;
+    font-family: 'Inter';
+}
+
+.details{
+    margin-top: 18px;   
+    display: flex;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: #1C4980;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.additional-details{
+    margin-left: 20px;
+}
+
+.desc{
+    color: #1C4980;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.count{
+    display: flex;
+}
+
+.plus{
+    color: #05C165;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.icon img{
+    height: 43px;
+    width: 43px;
+}
+
+
+.separator{
+    width: 1px;
+    margin-left: 20px;
+    border-left:1px solid #DADCE0;
+}
+
+.total-assessment{
+    border-right: 1px solid #DADCE0;
+    width: 173px;
+}
+
+.candidates{
+    border-right: 1px solid #DADCE0;
+    width: 395px;
+}
+
+.candidates-source{
+    border-right: 1px solid #DADCE0;
+    width: 535px;
+}
+
+.total-purpose{
+    width: 148px;
+}
+
+.total-purpose-copy{
+    display: none;
+}
+
+
+@media screen and (max-width:700px) {
+
+    .header{
+        display: none;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .details{
+        margin-top: 10px;
+    }
+
+    .total-assessment{
+        border-right: 1px solid #DADCE0;
+        width: 50%;
+    }
+    
+    .candidates{
+        border-right: none;
+        border-top: 1px solid #DADCE0;;
+        width: 100%;
+    }
+    
+    .candidates-source{
+        border-right: none;
+        border-top: 1px solid #DADCE0;
+        width: 100%;
+    }
+    
+    .total-purpose{
+        display: none;
+    }
+
+    .total-purpose-copy{
+        display: inline-block;
+    }
+
+    .total-assessment{
+        display: inline-block;
+    }
+
+    .section{
+        padding: 10px 10px;
+    }
+
+    .separator{
+        margin-left: 8px;
+    }
+
+    .additional-details{
+        margin-left: 8px;
+    }
+}

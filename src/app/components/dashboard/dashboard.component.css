@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800;900&family=Open+Sans&display=swap');
+
+.container{
+    padding: 22px;
+}
+
+.my-assessment{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1C4980;
+    font-family: 'Inter';
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.icons{
+    display: none;
+}
+
+.card{
+    display: flex;
+}
+
+.chart-active{
+
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    padding: 7px 10px;
+    border: 1px solid #0073E6;
+}
+
+app-add-assessment-card{
+    display: inline-block;
+}
+
+app-assessment-card{
+    display: inline-block;
+}
+
+@media screen and (max-width:700px) {
+    .container{
+        padding: 15px;
+    }
+
+    .card{
+        display: block;
+    }
+
+    .icons{
+        display: flex;
+        align-items: center;
+        width: 100px;
+        justify-content: space-between;
+    }
+
+    app-assessment-card{
+        display: block;
+    }
+}

@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    background-color: #F6F8FA;
+    height: 200vh;
+}
+app-side-panel{
+    width:148px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+}
+app-dashboard{
+    width: 87.5vw;
+    height: 100vh;
+    margin: 0 22px 0 17px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position:absolute;
+    left: 148px;
+}
+
+
+@media screen and (max-width:700px) {
+
+    .container{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .mobile{
+        display: flex;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.5);
+        width:100%;
+        height: 100%;
+    }
+
+    .not-mobile{
+        display: none;
+    }
+
+    app-dashboard{
+        position:relative;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+}

@@ -1,0 +1,53 @@
+<div class="main" *ngIf="toShow">
+  <div class="container">
+    <div class="header">
+      <div class="title">Create new assessment</div>
+      <div class="close-icon" (click)="hide()">
+        <img src="assets/images/close_1.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="inputs">
+      <div class="label">Name of assessment</div>
+      <div class="input-item">
+        <input type="text" placeholder="Type Here" />
+      </div>
+      <div class="label">Purpose of test is</div>
+      <div class="input-item">
+        <select name="" id="">
+          <option value="">Select</option>
+        </select>
+      </div>
+      <div class="label">Description</div>
+      <div class="input-item">
+        <select name="" id="">
+          <option value="">Select</option>
+        </select>
+      </div>
+      <div class="label">Skills</div>
+      <div class="input-item skills-input-item">
+        <div class="tags" *ngIf="skills.length > 0">
+          <div class="tag" *ngFor="let skill of skills; let i; as: index">
+            <div class="tag-container">
+              <div class="tag-label">
+                {{ skill }}
+              </div>
+              <div class="remove-btn" (click)="remove(i)">
+                <img src="assets/images/close_2.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <input class="" type="text" placeholder="Type Here" />
+      </div>
+      <div class="label">Duration of assessment</div>
+      <div class="input-item">
+        <input type="text" placeholder="HH:MM:SS" />
+      </div>
+    </div>
+
+    <div class="save-btn-container">
+        <button class="btn">Save</button>
+    </div>
+  </div>
+</div>
