@@ -1,5 +1,19 @@
 # AssessmentApp
 
+# unstop-assignment
+unstop assessment assignment
+
+#To run the assessment app - open project and run "npm i" in terminal.
+
+#Run ng serve in terminal to start the app.
+
+#App is developed in multiple components -
+1.Side-panel
+2.Dashboard
+  i. Header
+  ii. Overview
+  iii. Add assessment card
+  iv. Assessment card
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
 
 ## Development server
