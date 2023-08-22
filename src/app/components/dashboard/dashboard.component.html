@@ -1,20 +1,27 @@
 <app-header></app-header>
 <div class="container">
-  <app-overview></app-overview>
+  <app-overview [isOverViewActive]="isOverViewActive"></app-overview>
   <div class="my-assessment">
     <div class="label">My Assessment</div>
     <div class="icons">
       <img src="assets/images/search.svg" alt="">
       <img src="assets/images/filter_list_alt.svg" alt="">
-      <img *ngIf="!isChartActive" src="assets/images/bar_chart.svg" alt="">
-      <span class="chart-active" *ngIf="isChartActive">
-        <img  src="assets/images/bar_chart_active.svg" alt="">
+      <img *ngIf="!isOverViewActive" src="assets/images/bar_chart.svg" alt="" (click) = toggle()>
+      <span class="chart-active" *ngIf="isOverViewActive">
+        <img  src="assets/images/bar_chart_active.svg" alt="" (click)="toggle()">
       </span>
     </div>
   </div>
   <div class="card">
     <app-add-assessment-card ></app-add-assessment-card>
     <app-assessment-card></app-assessment-card>
-    <app-assessment-card  [isLast]="true"></app-assessment-card>
+    
+    <app-assessment-card [isLast]="true"  *ngIf="mobileView"></app-assessment-card>
+    <app-assessment-card [isLast]="true"  *ngIf="mobileView"></app-assessment-card>
+    <app-assessment-card [isLast]="true"  *ngIf="mobileView"></app-assessment-card>
+    <app-assessment-card [isLast]="true"  *ngIf="mobileView"></app-assessment-card>
+    <app-assessment-card [isLast]="true"  *ngIf="mobileView"></app-assessment-card>
+    
+    <app-assessment-card [isLast]="true"></app-assessment-card>
   </div>
 </div>

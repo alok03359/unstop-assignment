@@ -10,8 +10,7 @@ import { GenericService } from 'src/app/services/generic.service';
 export class SidePanelComponent {
   public IMG_BASE: string = "assets/images/";
   public subscription!: Subscription;
-
-  @Input() isMobile: boolean = false;
+  public toShow: any;
 
   public items = [
     {
@@ -33,18 +32,16 @@ export class SidePanelComponent {
       isActive: false
     }
   ];
-  public toShow: any;
 
   constructor(private genericService: GenericService, private zone: NgZone) {}
 
-
-  
   public ngOnInit() {
       this.subscription = this.genericService.menuBarState.subscribe((state:any) => {
           this.zone.run(() => {
               this.toShow = state.show;
           });
       });
+      
   }
 
   public ngOnDestroy() {
@@ -55,10 +52,7 @@ export class SidePanelComponent {
     this.genericService.hideMenu()
   }
 
-
-
   public openPage(label: string){
-    console.log('page :',label)
   }
 
 }

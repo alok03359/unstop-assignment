@@ -3,12 +3,7 @@
     background-color: #F6F8FA;
     height: 200vh;
 }
-app-side-panel{
-    width:148px;
-    height: 100vh;
-    background-color: #ffffff;
-    position: fixed;
-}
+
 app-dashboard{
     width: 87.5vw;
     height: 100vh;
@@ -27,16 +22,10 @@ app-dashboard{
         height: 100%;
         width: 100%;
     }
-    .mobile{
-        display: flex;
-        z-index: 100;
-        background-color: rgba(0, 0, 0, 0.5);
-        width:100%;
-        height: 100%;
-    }
 
-    .not-mobile{
-        display: none;
+    @keyframes menuClose{
+        from{ width: 100%; display: flex;}
+        to{ width: 0%;display: none;}
     }
 
     app-dashboard{

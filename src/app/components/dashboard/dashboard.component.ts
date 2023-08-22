@@ -6,8 +6,22 @@ import { GenericService } from 'src/app/services/generic.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
 
-  public isChartActive: boolean= false;
+  public isOverViewActive: boolean = false;
+  public mobileView: boolean = false;
+
+  ngOnInit(): void {
+      if(window.innerWidth<700){
+          this.mobileView = true;
+      }else{
+        this.mobileView = false;
+        this.isOverViewActive = true;
+      }
+  }
+
+  toggle(){
+    this.isOverViewActive = !this.isOverViewActive;
+  }
 
 }

@@ -1,4 +1,4 @@
-<div class="menu" *ngIf="!isMobile">
+<div class="menu menu-full">
     <div class="menu-items">
         <div *ngFor="let i of items">
             <div [ngClass]="i.isActive?'item active':'item inactive'" >
@@ -25,42 +25,40 @@
 </div>
 
 
-<div class="menu" *ngIf="isMobile && toShow">
-    <div class="header">
-        <div class="menu-header">
-            Menu
+<div class="menu-mobile" [ngStyle]="{position: toShow?'absolute':'absolute', left: toShow?'0%':'-100%',animation:'menuOpen 0.5s'}">
+    <div class="menu">
+        <div class="header">
+            <div class="menu-header">
+                Menu
+            </div>
+            <div class="close-menu-btn">
+                <img src="assets/images/close_2.svg" alt="" (click)="hideMenu()">
+            </div>
         </div>
-        <div class="close-menu-btn">
-            <img src="assets/images/close_2.svg" alt="" (click)="hideMenu()">
-        </div>
-    </div>
-    <div class="menu-items">
-        <div *ngFor="let i of items">
-            <div [ngClass]="i.isActive?'item active':'item inactive'" (click)="openPage(i.label)">
-                <div  class="outer">
-                    <img class="menu-icon" [src]="i.isActive ? IMG_BASE + i.active_icon : IMG_BASE + i.icon" alt="">
-                    <div [ngClass]="i.isActive? 'menu-label active_label' :'menu-label'">{{i.label}}</div>
+        <div class="menu-items">
+            <div *ngFor="let i of items">
+                <div [ngClass]="i.isActive?'item active':'item inactive'" (click)="openPage(i.label)">
+                    <div  class="outer">
+                        <img class="menu-icon" [src]="i.isActive ? IMG_BASE + i.active_icon : IMG_BASE + i.icon" alt="">
+                        <div [ngClass]="i.isActive? 'menu-label active_label' :'menu-label'">{{i.label}}</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="admin">
-        <div class="admin-label-container">
-           <span class="admin-label">
-            Admin
-           </span>
-        </div>
-        <div class="item inactive admin-container-mobile">
-            <div   class="outer">
-                <img class="menu-icon" [src]="IMG_BASE + 'admin_meds.svg'" alt="">
-                <div class="menu-label">Round Status</div>
+        <div class="admin">
+            <div class="item inactive admin-container-mobile">
+                <div   class="outer">
+                    <img class="menu-icon" [src]="IMG_BASE + 'admin_meds.svg'" alt="">
+                    <div class="menu-label">Round Status</div>
+                </div>
+                <div class="admin-mobile">
+                    <span class="admin-label">
+                     Admin
+                    </span>
+                 </div>
             </div>
-            <div class="admin-mobile">
-                <span class="admin-label">
-                 Admin
-                </span>
-             </div>
         </div>
     </div>
+    <div class="extra-area" (click)="hideMenu()"></div>
 </div>
-<div class="extra-area"></div>
+

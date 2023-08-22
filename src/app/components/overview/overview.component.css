@@ -104,7 +104,81 @@
 }
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1200px) {
+    .section{
+        padding: 5px;
+    }
+
+    .container{
+        margin-top: 15px;
+    }
+    
+    .title{
+        font-size: 12px;
+    }
+    
+    .details{
+        margin-top: 13px;   
+    }
+    
+    .label{
+        font-size: 18px;
+    }
+    
+    .additional-details{
+        margin-left: 15px;
+    }
+    
+    .desc{
+        font-size: 10px;
+    }
+    
+    .plus{
+        font-size: 10px;
+    }
+    
+    .icon img{
+        height: 35px;
+        width: 35px;
+    }
+    
+    .separator{
+        margin-left: 15px;
+    }
+    
+    .total-assessment{
+        max-width: 173px;
+    }
+    
+    .candidates{
+        max-width: 395px;
+    }
+    
+    .candidates-source{
+        max-width: 535px;
+    }
+    
+    .total-purpose{
+        max-width: 148px;
+    }
+    
+    .total-purpose-copy{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:1000px) {
+
+    .main{
+        animation: show 1s;
+    }
+
+    @keyframes show {
+        from{ height: 0;}
+        to{ height: 100%;}
+        
+    }
 
     .header{
         display: none;
@@ -112,6 +186,7 @@
 
     .container{
         display: block;
+        width: 100%;
     }
 
     .details{
@@ -120,19 +195,19 @@
 
     .total-assessment{
         border-right: 1px solid #DADCE0;
-        width: 50%;
+        min-width: 50%;
     }
     
     .candidates{
         border-right: none;
         border-top: 1px solid #DADCE0;;
-        width: 100%;
+        min-width: 100%;
     }
     
     .candidates-source{
         border-right: none;
         border-top: 1px solid #DADCE0;
-        width: 100%;
+        min-width: 100%;
     }
     
     .total-purpose{
@@ -141,6 +216,7 @@
 
     .total-purpose-copy{
         display: inline-block;
+        min-width: 50%;
     }
 
     .total-assessment{
@@ -159,3 +235,4 @@
         margin-left: 8px;
     }
 }
+

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-overview',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./overview.component.css']
 })
 export class OverviewComponent {
-
+  @Input() isOverViewActive : boolean = false;
 }
